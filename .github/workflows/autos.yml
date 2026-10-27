@@ -50,7 +50,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GITHUB_TOKEN: ${{ github.token }}
-          MODE: ${{ inputs.modo || (github.event_name == 'push' && 'diagnostico') || 'buscar_y_enviar' }}
+          MODE: ${{ inputs.modo || (github.event_name == 'push' && 'probar_telegram') || 'buscar_y_enviar' }}
         shell: bash
         run: |
           case "$MODE" in
