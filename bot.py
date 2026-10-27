@@ -261,7 +261,7 @@ def blue_rate(config, now):
 
 
 def telegram(method, payload):
-    token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     if not re.fullmatch(r"\d+:[A-Za-z0-9_-]+", token):
         raise BotError("Falta TELEGRAM_BOT_TOKEN o su formato no es válido.")
     response = http("POST", f"https://api.telegram.org/bot{token}/{method}", json=payload)
@@ -275,7 +275,7 @@ def telegram(method, payload):
 
 
 def send(text):
-    chat = os.environ.get("TELEGRAM_CHAT_ID", "")
+    chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     if not re.fullmatch(r"-\d+", chat):
         raise BotError("TELEGRAM_CHAT_ID debe ser el ID negativo de tu grupo.")
     return telegram("sendMessage", {"chat_id": chat, "text": text,

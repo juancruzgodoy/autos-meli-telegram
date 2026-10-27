@@ -148,6 +148,11 @@ class IntegrationContracts(unittest.TestCase):
         for expected in ("2021", "89.999 km", "La Plata", "21.000.000", CAR.url):
             self.assertIn(expected, text)
 
+    def test_group_secret_trims_whitespace(self):
+        with patch.dict("os.environ", {"TELEGRAM_CHAT_ID": " -1001234567890\n"}), patch("bot.telegram") as api:
+            bot.send("Prueba")
+            self.assertEqual(api.call_args.args[1]["chat_id"], "-1001234567890")
+
 
 if __name__ == "__main__":
     unittest.main()
