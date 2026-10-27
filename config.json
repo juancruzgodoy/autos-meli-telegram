@@ -1,0 +1,35 @@
+{
+  "min_price_ars": 20000000,
+  "max_price_ars": 23000000,
+  "min_year": 2021,
+  "max_km_exclusive": 90000,
+  "max_age_hours": 24,
+  "max_pages_per_search": 30,
+  "max_details_per_run": 120,
+  "request_delay_seconds": 2,
+  "max_fx_age_hours": 96,
+  "search_bases": [
+    "https://autos.mercadolibre.com.ar/capital-federal/",
+    "https://autos.mercadolibre.com.ar/bsas-gba-sur/"
+  ],
+  "allowed_places": [
+    "Capital Federal", "CABA", "Ciudad Autónoma de Buenos Aires", "Bs.As. G.B.A. Sur",
+    "Agronomía", "Almagro", "Balvanera", "Barracas", "Belgrano", "Boedo", "Caballito",
+    "Chacarita", "Coghlan", "Colegiales", "Constitución", "Flores", "Floresta", "La Boca",
+    "La Paternal", "Liniers", "Mataderos", "Monte Castro", "Monserrat", "Montserrat",
+    "Nueva Pompeya", "Núñez", "Palermo", "Parque Avellaneda", "Parque Chacabuco",
+    "Parque Chas", "Parque Patricios", "Puerto Madero", "Recoleta", "Retiro", "Saavedra",
+    "San Cristóbal", "San Nicolás", "San Telmo", "Vélez Sarsfield", "Versalles",
+    "Villa Crespo", "Villa del Parque", "Villa Devoto", "Villa General Mitre", "Villa Lugano",
+    "Villa Luro", "Villa Ortúzar", "Villa Pueyrredón", "Villa Real", "Villa Riachuelo",
+    "Villa Santa Rita", "Villa Soldati", "Villa Urquiza",
+    "Avellaneda", "Lanús", "Quilmes", "Berazategui", "Florencio Varela", "Lomas de Zamora",
+    "Almirante Brown", "Esteban Echeverría", "Ezeiza", "Presidente Perón", "San Vicente",
+    "La Plata", "Berisso", "Ensenada", "Adrogué", "Burzaco", "Longchamps", "Glew",
+    "Banfield", "Temperley", "Turdera", "Llavallol", "Monte Grande", "Luis Guillón",
+    "Remedios de Escalada", "Valentín Alsina", "Wilde", "Sarandí", "Gerli", "Dock Sud",
+    "Bernal", "Ezpeleta", "Ranelagh", "Hudson", "Guernica", "Alejandro Korn",
+    "City Bell", "Gonnet", "Manuel B. Gonnet", "Villa Elisa", "Tolosa", "Ringuelet",
+    "Los Hornos", "José Mármol", "Rafael Calzada", "Claypole", "Don Orione"
+  ]
+}
