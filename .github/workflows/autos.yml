@@ -3,6 +3,11 @@ name: Buscar autos
 on:
   push:
     branches: [main]
+    paths:
+      - '**.py'
+      - 'config.json'
+      - 'requirements.txt'
+      - '.github/workflows/autos.yml'
   schedule:
     - cron: '7,22,37,52 * * * *'
   workflow_dispatch:

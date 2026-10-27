@@ -1,10 +1,13 @@
 # Autos de MeLi → Telegram
 
-**Estado: lectura web probada localmente; envío y ejecución en la nube requieren configuración.**
-El 27/10/2026 se leyeron 192 tarjetas reales y tres fichas en una prueba acotada sin enviar
-mensajes. La API genérica devolvió 403; el adaptador usa búsquedas web con filtros, que sí
-respondieron en ese entorno. MeLi puede responder distinto desde servidores de GitHub.
-El workflow prueba una muestra automáticamente al subir cambios a `main`. La programación
+**Estado: lectura web probada localmente y desde GitHub Actions; envío pendiente de configurar Telegram.**
+El 27/10/2026 se leyeron 192 tarjetas reales y tres fichas tanto localmente como en una
+[ejecución de GitHub Actions](https://github.com/juancruzgodoy/autos-meli-telegram/actions/runs/40577984878),
+sin enviar mensajes. También pasaron 18 pruebas automatizadas. Esta muestra limitada
+no constituye un recorrido completo de los avisos de las últimas 24 horas.
+La API genérica devolvió 403; el adaptador usa búsquedas web con filtros, que sí respondieron.
+MeLi puede cambiar el diseño o restringir el acceso en futuras ejecuciones.
+El workflow prueba una muestra automáticamente al subir cambios de código a `main`. La programación
 permanece desactivada hasta configurar Telegram y activar `MONITOR_ENABLED`.
 
 ## Qué hace
